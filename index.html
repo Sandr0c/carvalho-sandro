@@ -1,869 +1,162 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Découvrez mon e-portfolio, mes compétences, mes projets et mon parcours.">
-
-    <title>Mon e-Portfolio | Portfolio professionnel</title>
-
+    <meta name="description" content="Sandro Carvalho's engineering e-portfolio: studies, projects, international mobility, civic engagement, activities and career goals.">
+    <title>Sandro Carvalho | Engineering e-Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icônes -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
-
-    <!-- ================= HEADER ================= -->
-
     <header class="header">
         <nav class="navbar container">
-
-            <a href="#accueil" class="logo">
-                Mon<span>Portfolio.</span>
-            </a>
-
-            <button
-                class="menu-toggle"
-                id="menu-toggle"
-                aria-label="Ouvrir le menu"
-                aria-expanded="false"
-                aria-controls="nav-menu">
-
-                <i class="fas fa-bars"></i>
-            </button>
-
+            <a href="#welcome" class="logo">Sandro<span>.</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><i class="fas fa-bars"></i></button>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-                <li><a href="#apropos" class="nav-link">À propos</a></li>
-                <li><a href="#competences" class="nav-link">Compétences</a></li>
-                <li><a href="#projets" class="nav-link">Projets</a></li>
-                <li><a href="#parcours" class="nav-link">Parcours</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#welcome" class="nav-link active">Welcome</a></li>
+                <li><a href="#engineering" class="nav-link">Engineering Course</a></li>
+                <li><a href="#mobility" class="nav-link">International Mobility</a></li>
+                <li><a href="#sustainability" class="nav-link">Sustainability & Civic Engagement</a></li>
+                <li><a href="#activities" class="nav-link">Sport & Other Activities</a></li>
+                <li><a href="#career" class="nav-link">Career Development</a></li>
             </ul>
-
-            <button
-                class="theme-toggle"
-                id="theme-toggle"
-                aria-label="Activer le thème sombre">
-
-                <i class="fas fa-moon"></i>
-            </button>
-
+            <div class="nav-actions">
+                <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch website language to French" title="Passer en français">FR</button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Enable dark theme"><i class="fas fa-moon"></i></button>
+            </div>
         </nav>
     </header>
 
-
     <main>
-
-        <!-- ================= ACCUEIL ================= -->
-
-        <section class="hero section" id="accueil">
-
+        <section class="hero section" id="welcome">
             <div class="container hero-content">
-
                 <div class="hero-text">
-
-                    <p class="eyebrow">
-                        BIENVENUE SUR MON E-PORTFOLIO
-                    </p>
-
-                    <h1>
-                        Bonjour, je suis<br>
-                        <span>Carvalho Sandro</span>
-                    </h1>
-
-                    <h2>
-                        Ingénieur informatique
-                    </h2>
-
-                    <p class="hero-description">
-                        Je suis actuellement étudiant en première année à l'ENSEEIHT à Toulouse.
-                        Passionné par l'informatique, je développe
-                        mes compétences et réalise des projets qui
-                        me permettent de progresser et d'atteindre
-                        mes objectifs professionnels.
-                    </p>
-
+                    <p class="eyebrow">WELCOME TO MY E-PORTFOLIO</p>
+                    <h1>Hello, I'm<br><span>Sandro Carvalho</span></h1>
+                    <h2>Engineering student at ENSEEIHT</h2>
+                    <p class="hero-description">Welcome to my e-portfolio. Here, you can explore my engineering studies, projects and productions, international experiences, civic engagement, personal activities and professional goals.</p>
                     <div class="hero-buttons">
-
-                        <a href="#projets" class="btn btn-primary">
-                            Découvrir mes projets
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-
-                        <a href="#contact" class="btn btn-outline">
-                            Me contacter
-                        </a>
-
+                        <a href="#engineering" class="btn btn-primary">Explore my journey <i class="fas fa-arrow-right"></i></a>
+                        <a href="#career" class="btn btn-outline">Career development</a>
                     </div>
-
                     <div class="social-links">
-
-                        <!-- Remplace les # par tes liens personnels -->
-
-                        <a href="#contact"
-                           aria-label="LinkedIn"
-                           title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-
-                        <a href="#contact"
-                           aria-label="GitHub"
-                           title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-
-                        <a href="mailto:ton.adresse@email.com"
-                           aria-label="E-mail"
-                           title="E-mail">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:your.email@example.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-
                 </div>
-
-
-                <!-- Carte de présentation sans image -->
-
                 <div class="hero-visual">
-
                     <div class="profile-card">
-
-                        <div class="profile-icon">
-                            <i class="fas fa-user"></i>
-                        </div>
-
-                        <p class="profile-label">
-                            MON PROFIL
-                        </p>
-
-                        <h3>Carvalho Sandro</h3>
-
-                        <p class="profile-description">
-                            Étudiant
-                        </p>
-
+                        <div class="profile-icon"><i class="fas fa-user-graduate"></i></div>
+                        <p class="profile-label">MY PROFILE</p>
+                        <h3>Sandro Carvalho</h3>
+                        <p class="profile-description">Engineering student</p>
                         <div class="profile-divider"></div>
-
-                        <div class="profile-info">
-                            <i class="fas fa-location-dot"></i>
-                            <span>Toulouse</span>
-                        </div>
-
-                        <div class="profile-info">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Ingénieur informatique</span>
-                        </div>
-
-                        <div class="profile-info">
-                            <i class="fas fa-bullseye"></i>
-                            <span>Data scientist</span>
-                        </div>
-
+                        <div class="profile-info"><i class="fas fa-location-dot"></i><span>Toulouse, France</span></div>
+                        <div class="profile-info"><i class="fas fa-graduation-cap"></i><span>ENSEEIHT</span></div>
+                        <div class="profile-info"><i class="fas fa-laptop-code"></i><span>Computer science</span></div>
                     </div>
-
-                    <div class="decoration decoration-one"></div>
-                    <div class="decoration decoration-two"></div>
-
+                    <div class="decoration decoration-one"></div><div class="decoration decoration-two"></div>
                 </div>
-
             </div>
-
-            <a href="#apropos" class="scroll-indicator">
-                <span>Défiler pour découvrir</span>
-                <i class="fas fa-chevron-down"></i>
-            </a>
-
+            <a href="#engineering" class="scroll-indicator"><span>Scroll to discover</span><i class="fas fa-chevron-down"></i></a>
         </section>
 
-
-        <!-- ================= À PROPOS ================= -->
-
-        <section class="section about" id="apropos">
-
+        <section class="section about" id="engineering">
             <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">QUI SUIS-JE ?</p>
-                    <h2>À propos de <span>moi</span></h2>
-                    <p>
-                        Quelques mots pour découvrir mon profil,
-                        mes motivations et mes objectifs.
-                    </p>
+                <div class="section-heading"><p class="eyebrow">LEARNING & BUILDING</p><h2>Engineering <span>Course</span></h2><p>My engineering curriculum, the skills I develop, and the work I produce along the way.</p></div>
+                <div class="portfolio-tabs" role="tablist" aria-label="Engineering course subsections">
+                    <button class="portfolio-tab active" role="tab" aria-selected="true" aria-controls="engineering-overview" data-tab="engineering-overview">Course overview</button>
+                    <button class="portfolio-tab" role="tab" aria-selected="false" aria-controls="projects-panel" data-tab="projects-panel">Projects</button>
+                    <button class="portfolio-tab" role="tab" aria-selected="false" aria-controls="productions-panel" data-tab="productions-panel">Productions</button>
                 </div>
+                <div class="tab-panel active" id="engineering-overview" role="tabpanel">
+                    <div class="about-grid">
+                        <article class="about-card about-main"><div class="card-icon"><i class="fas fa-graduation-cap"></i></div><h3>My engineering studies</h3><p>I am currently studying at ENSEEIHT in Toulouse. This course allows me to strengthen my scientific foundations, learn engineering methods and work on practical problems.</p><p><strong>To complete:</strong> add your main courses, learning outcomes and milestones from each year.</p></article>
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-code"></i></div><h3>Technical skills</h3><p>Computer science, algorithms, programming and problem solving.</p><p><strong>To complete:</strong> list the languages, tools and technologies you have used.</p></article>
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-people-group"></i></div><h3>Teamwork</h3><p>Group work helps me practise communication, organisation and collaborative problem solving.</p><p><strong>To complete:</strong> add examples of teamwork and your contribution.</p></article>
+                    </div>
+                </div>
+                <div class="tab-panel" id="projects-panel" role="tabpanel" hidden>
+                    <div class="projects-grid">
+                        <article class="project-card"><div class="project-visual project-visual-one"><i class="fas fa-laptop-code"></i><span>PROJECT 01</span></div><div class="project-content"><p class="project-category">Computer science</p><h3>Project title</h3><p>Describe the problem, your approach, the technologies used and the result.</p><div class="tag-list"><span>Programming</span><span>Problem solving</span></div></div></article>
+                        <article class="project-card"><div class="project-visual project-visual-two"><i class="fas fa-users"></i><span>PROJECT 02</span></div><div class="project-content"><p class="project-category">Team project</p><h3>Project title</h3><p>Explain the objective, your role, the work completed and what you learned.</p><div class="tag-list"><span>Teamwork</span><span>Project management</span></div></div></article>
+                        <article class="project-card"><div class="project-visual project-visual-three"><i class="fas fa-lightbulb"></i><span>PROJECT 03</span></div><div class="project-content"><p class="project-category">Personal project</p><h3>Project title</h3><p>Present a personal initiative, a technical challenge and the outcome.</p><div class="tag-list"><span>Initiative</span><span>Learning</span></div></div></article>
+                    </div>
+                </div>
+                <div class="tab-panel" id="productions-panel" role="tabpanel" hidden>
+                    <div class="about-grid">
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-file-lines"></i></div><h3>Reports & documentation</h3><p>Add reports, technical documents or written assignments that demonstrate your learning.</p></article>
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-display"></i></div><h3>Presentations & demonstrations</h3><p>Add slides, posters, demos or links to work you are allowed to share.</p></article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section skills" id="mobility">
+            <div class="container">
+                <div class="section-heading"><p class="eyebrow">OPENING UP TO THE WORLD</p><h2>International <span>Mobility</span></h2><p>My language learning, intercultural experiences and opportunities to study or work internationally.</p></div>
+                <div class="portfolio-tabs" role="tablist" aria-label="International mobility subsections">
+                    <button class="portfolio-tab active" role="tab" aria-selected="true" aria-controls="mobility-overview" data-tab="mobility-overview">Overview</button>
+                    <button class="portfolio-tab" role="tab" aria-selected="false" aria-controls="pce-panel" data-tab="pce-panel">PCE</button>
+                    <button class="portfolio-tab" role="tab" aria-selected="false" aria-controls="languages-panel" data-tab="languages-panel">LV2 & languages</button>
+                    <button class="portfolio-tab" role="tab" aria-selected="false" aria-controls="mobility-experience-panel" data-tab="mobility-experience-panel">Mobility experience</button>
+                </div>
+                <div class="tab-panel active" id="mobility-overview" role="tabpanel">
+                    <div class="about-grid">
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-earth-europe"></i></div><h3>International outlook</h3><p>Describe what international mobility means for your engineering studies and future career.</p></article>
+                        <article class="about-card"><div class="card-icon"><i class="fas fa-language"></i></div><h3>Languages & intercultural skills</h3><p>Highlight language learning, communication and your ability to adapt to different cultural contexts.</p></article>
+                    </div>
+                </div>
+                <div class="tab-panel" id="pce-panel" role="tabpanel" hidden><div class="about-grid"><article class="about-card"><div class="card-icon"><i class="fas fa-book-open"></i></div><h3>PCE</h3><p>Add the meaning of PCE in your programme, the related requirements, activities, evidence and progress.</p></article></div></div>
+                <div class="tab-panel" id="languages-panel" role="tabpanel" hidden><div class="about-grid"><article class="about-card"><div class="card-icon"><i class="fas fa-comments"></i></div><h3>LV2 and other languages</h3><p>List your second language (LV2), current level, certifications, goals and examples of progress.</p></article><article class="about-card"><div class="card-icon"><i class="fas fa-certificate"></i></div><h3>Language evidence</h3><p>Add certificates, presentations, projects or other evidence of your language skills.</p></article></div></div>
+                <div class="tab-panel" id="mobility-experience-panel" role="tabpanel" hidden><div class="about-grid"><article class="about-card"><div class="card-icon"><i class="fas fa-plane"></i></div><h3>Study abroad</h3><p>Describe a past or planned exchange, internship, international project or other mobility opportunity.</p></article><article class="about-card"><div class="card-icon"><i class="fas fa-map"></i></div><h3>Preparation & goals</h3><p>Explain your destination preferences, preparation steps and what you hope to gain from the experience.</p></article></div></div>
+            </div>
+        </section>
+
+        <section class="section about" id="sustainability">
+            <div class="container">
+                <div class="section-heading"><p class="eyebrow">ACTING RESPONSIBLY</p><h2>Sustainability & <span>Civic Engagement</span></h2><p>How I contribute to society and take environmental, ethical and social issues into account.</p></div>
                 <div class="about-grid">
-
-                    <div class="about-card about-main">
-
-                        <div class="card-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-
-                        <h3>Ma présentation</h3>
-
-                        <p>
-                            Je m'appelle Carvalho Sandro et je suis
-                            étudiant en première année dans l'ENSEEIHT à toulosue.
-                        </p>
-
-                        <p>
-                            Je m'intéresse particulièrement à
-                            la cybersécurité.
-                            Au cours de mon parcours, j'ai pu
-                            développer des connaissances en
-                            algorithmie.
-                        </p>
-
-                        <p>
-                            Mon objectif est de développer mes connaissances sur la cybersécurité.
-                            Je souhaite continuer à apprendre,
-                            relever de nouveaux défis et mettre
-                            mes compétences en pratique.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-
-                        <h3>Mes motivations</h3>
-
-                        <p>
-                            [Explique ce qui te motive, pourquoi
-                            tu as choisi ton domaine et ce qui
-                            te donne envie de progresser.]
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">
-                            <i class="fas fa-flag"></i>
-                        </div>
-
-                        <h3>Mes objectifs</h3>
-
-                        <p>
-                            [Présente tes objectifs à court terme
-                            et à long terme, ainsi que les projets
-                            professionnels que tu souhaites réaliser.]
-                        </p>
-
-                    </div>
-
+                    <article class="about-card"><div class="card-icon"><i class="fas fa-leaf"></i></div><h3>Sustainability</h3><p>Describe projects, choices or learning related to environmental impact, responsible technology or sustainable development.</p></article>
+                    <article class="about-card"><div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div><h3>Civic engagement</h3><p>Present volunteering, community involvement, student representation or other contributions to collective life.</p></article>
+                    <article class="about-card"><div class="card-icon"><i class="fas fa-scale-balanced"></i></div><h3>Ethics & responsibility</h3><p>Explain how you consider ethical questions, accessibility, inclusion and the social impact of engineering.</p></article>
+                    <article class="about-card"><div class="card-icon"><i class="fas fa-folder-open"></i></div><h3>Evidence & reflection</h3><p>Add certificates, project summaries, photos or reflections that document your involvement.</p></article>
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ================= COMPÉTENCES ================= -->
-
-        <section class="section skills" id="competences">
-
+        <section class="section projects" id="activities">
             <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">MON SAVOIR-FAIRE</p>
-                    <h2>Mes <span>compétences</span></h2>
-                    <p>
-                        Les compétences que j'ai acquises
-                        et que je souhaite continuer à développer.
-                    </p>
-                </div>
-
-
-                <div class="skills-grid">
-
-                    <!-- Compétence 1 -->
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-
-                        <h3>[Compétence 1]</h3>
-
-                        <p>
-                            [Courte description de cette compétence.]
-                        </p>
-
-                        <div class="skill-progress">
-                            <div class="skill-progress-info">
-                                <span>Niveau</span>
-                                <span>[Débutant]</span>
-                            </div>
-
-                            <div class="progress-bar">
-                                <div class="progress-fill"
-                                     style="--progress: 35%;">
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- Compétence 2 -->
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-
-                        <h3>[Compétence 2]</h3>
-
-                        <p>
-                            [Courte description de cette compétence.]
-                        </p>
-
-                        <div class="skill-progress">
-                            <div class="skill-progress-info">
-                                <span>Niveau</span>
-                                <span>[Intermédiaire]</span>
-                            </div>
-
-                            <div class="progress-bar">
-                                <div class="progress-fill"
-                                     style="--progress: 60%;">
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- Compétence 3 -->
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-
-                        <h3>[Compétence 3]</h3>
-
-                        <p>
-                            [Courte description de cette compétence.]
-                        </p>
-
-                        <div class="skill-progress">
-                            <div class="skill-progress-info">
-                                <span>Niveau</span>
-                                <span>[Avancé]</span>
-                            </div>
-
-                            <div class="progress-bar">
-                                <div class="progress-fill"
-                                     style="--progress: 80%;">
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-
-                    <!-- Compétence 4 -->
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">
-                            <i class="fas fa-people-group"></i>
-                        </div>
-
-                        <h3>[Compétence 4]</h3>
-
-                        <p>
-                            [Courte description de cette compétence.]
-                        </p>
-
-                        <div class="skill-progress">
-                            <div class="skill-progress-info">
-                                <span>Niveau</span>
-                                <span>[Intermédiaire]</span>
-                            </div>
-
-                            <div class="progress-bar">
-                                <div class="progress-fill"
-                                     style="--progress: 55%;">
-                                </div>
-                            </div>
-                        </div>
-
-                    </article>
-
-                </div>
-
-                <p class="section-note">
-                    Les niveaux et les pourcentages sont des exemples :
-                    adapte-les à tes compétences réelles.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJETS ================= -->
-
-        <section class="section projects" id="projets">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">MES RÉALISATIONS</p>
-                    <h2>Mes <span>projets</span></h2>
-                    <p>
-                        Une sélection de projets réalisés pendant
-                        ma formation ou dans le cadre personnel.
-                    </p>
-                </div>
-
-
+                <div class="section-heading"><p class="eyebrow">BEYOND THE CLASSROOM</p><h2>Sport & Other <span>Activities</span></h2><p>My interests outside my studies and the personal skills they help me develop.</p></div>
                 <div class="projects-grid">
-
-                    <!-- Projet 1 -->
-
-                    <article class="project-card">
-
-                        <div class="project-visual project-visual-one">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>PROJET 01</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                [Catégorie du projet]
-                            </p>
-
-                            <h3>[Nom du premier projet]</h3>
-
-                            <p>
-                                [Présente le contexte du projet,
-                                le problème rencontré, ton rôle
-                                et le résultat obtenu.]
-                            </p>
-
-                            <div class="tag-list">
-                                <span>[Outil 1]</span>
-                                <span>[Outil 2]</span>
-                                <span>[Outil 3]</span>
-                            </div>
-
-                            <a href="#contact" class="project-link">
-                                En savoir plus
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Projet 2 -->
-
-                    <article class="project-card">
-
-                        <div class="project-visual project-visual-two">
-                            <i class="fas fa-folder-open"></i>
-                            <span>PROJET 02</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                [Catégorie du projet]
-                            </p>
-
-                            <h3>[Nom du deuxième projet]</h3>
-
-                            <p>
-                                [Explique les objectifs, les étapes
-                                de réalisation et les compétences
-                                mobilisées pour ce projet.]
-                            </p>
-
-                            <div class="tag-list">
-                                <span>[Outil 1]</span>
-                                <span>[Outil 2]</span>
-                                <span>[Outil 3]</span>
-                            </div>
-
-                            <a href="#contact" class="project-link">
-                                En savoir plus
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Projet 3 -->
-
-                    <article class="project-card">
-
-                        <div class="project-visual project-visual-three">
-                            <i class="fas fa-chart-line"></i>
-                            <span>PROJET 03</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                [Catégorie du projet]
-                            </p>
-
-                            <h3>[Nom du troisième projet]</h3>
-
-                            <p>
-                                [Décris le projet, les difficultés
-                                rencontrées, les solutions trouvées
-                                et ce que tu as appris.]
-                            </p>
-
-                            <div class="tag-list">
-                                <span>[Outil 1]</span>
-                                <span>[Outil 2]</span>
-                                <span>[Outil 3]</span>
-                            </div>
-
-                            <a href="#contact" class="project-link">
-                                En savoir plus
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </article>
-
+                    <article class="project-card"><div class="project-visual project-visual-one"><i class="fas fa-person-running"></i><span>SPORT</span></div><div class="project-content"><h3>Sport & fitness</h3><p>Describe the sports you practise, your routine, achievements and what sport teaches you about discipline and perseverance.</p><div class="tag-list"><span>Discipline</span><span>Team spirit</span></div></div></article>
+                    <article class="project-card"><div class="project-visual project-visual-two"><i class="fas fa-palette"></i><span>INTERESTS</span></div><div class="project-content"><h3>Personal interests</h3><p>Share hobbies, creative activities or subjects you enjoy exploring in your free time.</p><div class="tag-list"><span>Creativity</span><span>Curiosity</span></div></div></article>
+                    <article class="project-card"><div class="project-visual project-visual-three"><i class="fas fa-people-group"></i><span>COMMUNITY</span></div><div class="project-content"><h3>Clubs & collective activities</h3><p>Add student clubs, events or group activities, and explain your role and contribution.</p><div class="tag-list"><span>Collaboration</span><span>Initiative</span></div></div></article>
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ================= PARCOURS ================= -->
-
-        <section class="section journey" id="parcours">
-
+        <section class="section journey" id="career">
             <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">MON ÉVOLUTION</p>
-                    <h2>Mon <span>parcours</span></h2>
-                    <p>
-                        Les principales étapes de mon parcours
-                        scolaire et professionnel.
-                    </p>
-                </div>
-
-
+                <div class="section-heading"><p class="eyebrow">LOOKING AHEAD</p><h2>Career <span>Development</span></h2><p>My professional interests, goals and the steps I am taking towards them.</p></div>
                 <div class="timeline">
-
-                    <!-- Étape 1 -->
-
-                    <article class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            [Année - Année]
-                        </div>
-
-                        <div class="timeline-card">
-
-                            <p class="timeline-type">
-                                FORMATION
-                            </p>
-
-                            <h3>[Nom de la formation]</h3>
-
-                            <h4>[Nom de l'établissement]</h4>
-
-                            <p>
-                                [Décris brièvement cette formation,
-                                les matières étudiées et les
-                                compétences acquises.]
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Étape 2 -->
-
-                    <article class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            [Année - Année]
-                        </div>
-
-                        <div class="timeline-card">
-
-                            <p class="timeline-type">
-                                EXPÉRIENCE
-                            </p>
-
-                            <h3>[Nom du poste ou du stage]</h3>
-
-                            <h4>[Nom de l'entreprise]</h4>
-
-                            <p>
-                                [Présente tes missions, tes
-                                responsabilités et les résultats
-                                obtenus.]
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Étape 3 -->
-
-                    <article class="timeline-item">
-
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-date">
-                            [Année - Aujourd'hui]
-                        </div>
-
-                        <div class="timeline-card">
-
-                            <p class="timeline-type">
-                                PROJET ACTUEL
-                            </p>
-
-                            <h3>[Formation ou projet actuel]</h3>
-
-                            <h4>[Établissement ou organisme]</h4>
-
-                            <p>
-                                [Explique ce que tu fais actuellement,
-                                ce que tu apprends et les objectifs
-                                que tu souhaites atteindre.]
-                            </p>
-
-                        </div>
-
-                    </article>
-
+                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">NOW</div><div class="timeline-card"><p class="timeline-type">Explore</p><h3>Identify my interests</h3><p>Clarify the engineering fields that interest me, explore career options and identify the skills I want to develop.</p></div></article>
+                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">NEXT STEP</div><div class="timeline-card"><p class="timeline-type">Build experience</p><h3>Projects, internships & networking</h3><p>Gain practical experience through projects, internships, professional events and discussions with engineers.</p></div></article>
+                    <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">LONG TERM</div><div class="timeline-card"><p class="timeline-type">Professional goal</p><h3>Build my career plan</h3><p>Describe your target role or sector, the impact you hope to have and the milestones that will help you get there.</p></div></article>
                 </div>
-
+                <div class="career-contact"><p>Would you like to connect or learn more about my work?</p><a class="btn btn-primary" href="mailto:your.email@example.com">Get in touch <i class="fas fa-arrow-right"></i></a></div>
             </div>
-
         </section>
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section class="section contact" id="contact">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p class="eyebrow">RESTONS EN CONTACT</p>
-                    <h2>Me <span>contacter</span></h2>
-                    <p>
-                        Une question, une proposition ou une
-                        opportunité ? N'hésite pas à me contacter.
-                    </p>
-                </div>
-
-
-                <div class="contact-grid">
-
-                    <div class="contact-information">
-
-                        <h3>Parlons de ton projet !</h3>
-
-                        <p>
-                            Je suis disponible pour échanger sur
-                            mon parcours, mes compétences et mes
-                            projets professionnels.
-                        </p>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-
-                            <div>
-                                <h4>E-mail</h4>
-                                <a href="mailto:ton.adresse@email.com">
-                                    ton.adresse@email.com
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-location-dot"></i>
-                            </div>
-
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>[Ta ville, ton pays]</p>
-                            </div>
-                        </div>
-
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="#contact">
-                                    Mon profil professionnel
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Formulaire de démonstration -->
-
-                    <form class="contact-form" id="contact-form">
-
-                        <div class="form-group">
-
-                            <label for="name">Nom complet</label>
-
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Ton nom"
-                                autocomplete="name"
-                                required>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="email">Adresse e-mail</label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="exemple@email.com"
-                                autocomplete="email"
-                                required>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="subject">Sujet</label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="Objet de ton message"
-                                required>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="message">Message</label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="5"
-                                placeholder="Écris ton message ici..."
-                                required></textarea>
-
-                        </div>
-
-
-                        <button type="submit" class="btn btn-primary">
-                            Préparer mon message
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-
-                        <p class="form-note" id="form-message"
-                           role="status" aria-live="polite"></p>
-
-                        <p class="form-disclaimer">
-                            Ce formulaire prépare un e-mail dans
-                            ton application de messagerie. Il ne
-                            stocke ni n'envoie directement tes données.
-                        </p>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </section>
-
     </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
     <footer class="footer">
-
         <div class="container footer-content">
-
-            <a href="#accueil" class="logo">
-                Mon<span>Portfolio.</span>
-            </a>
-
-            <p>
-                © <span id="current-year"></span>
-                [Prénom Nom]. Tous droits réservés.
-            </p>
-
-            <a href="#accueil" class="back-to-top"
-               aria-label="Retour en haut de page">
-
-                <i class="fas fa-arrow-up"></i>
-
-            </a>
-
+            <a href="#welcome" class="logo">Sandro<span>.</span></a>
+            <p>© <span id="current-year"></span> Sandro Carvalho — Engineering e-Portfolio</p>
+            <a href="#welcome" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
         </div>
-
     </footer>
-
-
     <script src="script.js"></script>
-
 </body>
 </html>
-
