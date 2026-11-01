@@ -1620,3 +1620,24 @@
 .mobility-project-grid .tag-list { margin-top: auto; padding-top: 16px; }
 @media (max-width: 900px) { .career-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .career-project-grid { grid-template-columns: 1fr; } }
+
+/* Elevator pitch video */
+.elevator-video {
+    display: block;
+    width: 100% !important;
+    max-width: 560px !important;
+    height: auto !important;
+    max-height: 315px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    border-radius: 12px;
+    background: #000;
+    object-fit: contain;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
